@@ -5,7 +5,7 @@
   background-color:#eb4450;
 }
 
-.search-input navigator{
+.search-input .search-navigator{
   height: 100%;
   display: flex;
   justify-content: center;

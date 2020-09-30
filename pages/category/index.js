@@ -66,7 +66,7 @@ Page({
 
     //请求接口返回数据
     request({
-      url: "https://api-hmugo-web.itheima.net/api/public/v1/categories"
+      url: "categories"
     }).then(result => {
 
       //返回的接口数据

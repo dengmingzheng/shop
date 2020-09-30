@@ -1,4 +1,6 @@
-<view><search></search></view>
+<view>
+ <searchBar></searchBar>
+</view>
 
 <!-- 轮播图开始 -->
 <swiper class="swiper-group" indicator-dots autoplay circular>

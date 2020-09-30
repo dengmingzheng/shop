@@ -1,2 +1,40 @@
-<!--pages/category/index.wxml-->
-<text>pages/category/index.wxml</text>
+<!-- 搜索开始 -->
+<view>
+  <searchBar></searchBar>
+</view>
+<!-- 搜索结束 -->
+
+<!-- 分类容器开始 -->
+<view class="category-container">
+  <!-- 左侧分类开始 -->
+  <scroll-view class="left-menu" scroll-y>
+    <view class="menu-item {{index === currentIndex ? 'active' : ''}}" wx:for="{{leftMenuList}}" wx:key="*this" bindtap="onHaddleItemEvent" data-index="{{index}}">
+      {{item}}
+    </view>
+  </scroll-view>
+  <!-- 左侧分类结束 -->
+
+  <!-- 右侧分类开始 -->
+  <scroll-view class="right-content" scroll-y scroll-top="{{scrollTop}}">
+    <view class="goods-group" wx:for="{{rightContent}}" wx:key="cat_id">
+      <!-- 标题开始 -->
+      <view class="category-title">
+       <text class="delimiter">/</text>
+       <text> {{item.cat_name}}</text>
+       <text class="delimiter">/</text>
+      </view>
+      <!-- 标题结束 -->
+
+      <!-- 内容开始 -->
+      <view class="goods-list">
+         <navigator class="item-navigator" wx:for="{{item.children}}" wx:for-item="children" wx:key="cat_id">
+            <image mode="widthFix" class="item-image" src="{{children.cat_icon}}"></image>
+            <view class="item-name">{{children.cat_name}}</view>
+         </navigator>
+      </view>
+      <!-- 内容结束 -->
+    </view>
+  </scroll-view>
+  <!-- 右侧分类结束 -->
+</view>
+<!-- 分类容器结束 -->

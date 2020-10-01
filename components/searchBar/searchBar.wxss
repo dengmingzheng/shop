@@ -1,6 +1,5 @@
 .search-group{
   padding: 20rpx;
-  background-color:#41be57;
 }
 
 .search-navigator{

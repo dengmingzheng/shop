@@ -1,0 +1,25 @@
+.tabs{
+  padding: 0 20rpx;
+}
+
+.tabs .tabs-title{
+ width: 100%;
+ height:60rpx;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.tabs .tabs-title .item-title{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tabs .tabs-title .active{
+  width: 100%;
+  border-bottom: 5rpx solid currentColor;
+  color: var(--themeColor);
+}

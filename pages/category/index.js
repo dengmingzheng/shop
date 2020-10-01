@@ -13,8 +13,8 @@ Page({
     //左侧菜单被点中的状态
     currentIndex: 0,
     //点击左侧菜单触发右侧菜单置顶
-    scrollTop:0
-
+    scrollTop:0,
+   
   },
   //接口返回的分类数据
   cates: [],

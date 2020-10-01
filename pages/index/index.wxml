@@ -1,6 +1,4 @@
-<view>
- <searchBar></searchBar>
-</view>
+<searchBar backgroundColor="#eb4450"></searchBar>
 
 <!-- 轮播图开始 -->
 <swiper class="swiper-group" indicator-dots autoplay circular>

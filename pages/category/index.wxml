@@ -1,7 +1,5 @@
 <!-- 搜索开始 -->
-<view>
-  <searchBar></searchBar>
-</view>
+<searchBar backgroundColor="#eb4450"></searchBar>
 <!-- 搜索结束 -->
 
 <!-- 分类容器开始 -->
@@ -27,7 +25,7 @@
 
       <!-- 内容开始 -->
       <view class="goods-list">
-         <navigator class="item-navigator" wx:for="{{item.children}}" wx:for-item="children" wx:key="cat_id">
+         <navigator url="/pages/goods_list/index?cid={{children.cat_id}}" class="item-navigator" wx:for="{{item.children}}" wx:for-item="children" wx:key="cat_name">
             <image mode="widthFix" class="item-image" src="{{children.cat_icon}}"></image>
             <view class="item-name">{{children.cat_name}}</view>
          </navigator>

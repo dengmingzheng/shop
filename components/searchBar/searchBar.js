@@ -7,6 +7,10 @@ Component({
       isNavigator:{
         type:Boolean,
         value:false
+      },
+      backgroundColor:{
+        type:String,
+        value:'#41be57'
       }
   },
 
@@ -17,6 +21,11 @@ Component({
 
   },
 
+  lifetimes:{
+    attached:function(){
+      
+    }
+  },
   /**
    * 组件的方法列表
    */

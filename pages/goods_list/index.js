@@ -43,9 +43,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+     //获取分类ID并赋值
      this.QueryParams.cid = options.cid;
-     this.getGoodsList(this.QueryParams);
-      //console.log(options);
+     //获取商品列表数据
+     this.getGoodsList();    
   },
 
   //监听子组件切换菜单事件

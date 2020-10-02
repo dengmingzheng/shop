@@ -3,7 +3,7 @@
 <Tabs tabs="{{tabs}}" binditemChange="listenItemChangeEvent">
       <block wx:if="{{tabs[0].isActive}}">
         <view class="first_tab">
-           <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="id">
+           <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="goods_item" wx:for="{{goodsList}}" wx:key="id">
              <view class="goods_image_group">
                <image class="goods_image" mode="widthFix" src="{{item.goods_small_logo}}"></image>
              </view>
